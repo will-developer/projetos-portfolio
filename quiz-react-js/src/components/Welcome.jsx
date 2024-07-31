@@ -1,8 +1,13 @@
 import Quiz from '../img/quiz.svg';
+import { QuizContext } from '../context/quiz';
 
 import './Welcome.css';
+import { useContext } from 'react';
 
 const Welcome = () => {
+  const quizState = useContext(QuizContext);
+
+  console.log(quizState);
   return (
     <div id="welcome">
       <h2>Seja bem-vindo</h2>
