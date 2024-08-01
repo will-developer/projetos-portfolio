@@ -11,6 +11,7 @@ const initialState = {
 
 const quizReducer = (state, action) => {
   let reorderedQuestions;
+  let nextQuestion;
 
   console.log(state, action);
   switch (action.type) {
@@ -25,6 +26,13 @@ const quizReducer = (state, action) => {
       return {
         ...state,
         questions: reorderedQuestions,
+      };
+
+    case 'CHANGE_QUESTION':
+      nextQuestion = state.currentQuestion + 1;
+      return {
+        ...state,
+        currentQuestion: nextQuestion,
       };
 
     default:

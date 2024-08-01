@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     dispatch({ type: 'REORDER_QUESTIONS' });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">

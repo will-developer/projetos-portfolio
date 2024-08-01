@@ -5,6 +5,7 @@ import './Welcome.css';
 import { useContext } from 'react';
 
 const Welcome = () => {
+  // eslint-disable-next-line no-unused-vars
   const [quizState, dispatch] = useContext(QuizContext);
 
   return (
