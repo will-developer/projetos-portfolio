@@ -3,7 +3,9 @@ import { QuizContext } from '../context/quiz';
 
 import './Option.css';
 
+// eslint-disable-next-line react/prop-types
 const Option = ({ option, selectOption, answer }) => {
+  // eslint-disable-next-line no-unused-vars
   const [quizState, dispatch] = useContext(QuizContext);
   return (
     <div
